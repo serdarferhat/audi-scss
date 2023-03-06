@@ -1,16 +1,27 @@
 body{
-                background-color: rgb(13, 68, 68);
-                color: aliceblue;
+                background-color: rgb(156, 161, 161);
 }
-div{
-                background-color: aqua;
+*{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
 }
-nav{
+header{
+                display: flex;
+                justify-content: space-between;
                 background-color: aliceblue;
-                color: black;
-                ul{
-                                li{
-                                                text-decoration-style: none;
+                align-items: center;
+              
+                #nav-left{
+                                display: flex;
+                                align-items: center;
+                                gap: 25px;
+                                img{
+                                                width: 50px;
                                 }
+                }
+                #nav-right{
+                                display: flex;
+                                gap: 25px;
                 }
 }
