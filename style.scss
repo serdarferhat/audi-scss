@@ -1,5 +1,17 @@
 @import "degisken";
 @import "modul";
+
+@mixin mobile{
+  @media(max-width: 800px){
+    @content;
+  }
+  }
+@mixin pc{
+  @media(min-width: 801px) and (max-width:1300px){
+    @content;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +20,7 @@
 body{
  background-color: $bg-color;
  font-family: $main-font;
+ overflow-x: hidden;
 }
 header {
   display: flex;
@@ -53,12 +66,22 @@ header {
 }
   }
 }
-
+.kapsayıcı{
+  display: flex;
+  @include mobile{
+    flex-direction: column;
+  }
+  @include pc{
+    flex-direction: column;
+  }
+  justify-content: center;
+}
 .slogan{
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 35px;
+  gap: 95px;
+  margin-top: 95px;
   h1{
     @extend %heading;
     text-align: center;
@@ -69,13 +92,37 @@ header {
   }
   img{
     max-width: 300px;
-    mix-blend-mode: darken;
+    mix-blend-mode:darken;
+    @include mobile{
+      width: 250px;
+    }
   }
   button{
     @extend %button;
-    background-color: #21bbc4;
+    background-color: #1dadb4;
   }
   h2{
     @extend %heading
   }
+}
+// nav-bar -right
+.image{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:45px ;
+ #img-main{
+  max-width: 750px;
+  mix-blend-mode:darken;
+  @include mobile{
+    width: 600px;
+  }
+ }
+ #img-yol{
+ max-width:600px ;
+ mix-blend-mode:darken;
+}
+p{
+  max-width: 500px;
+}
 }

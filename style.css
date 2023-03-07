@@ -1,10 +1,11 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Electrolize&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Electrolize&family=Golos+Text:wght@400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Electrolize&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Electrolize&family=Golos+Text:wght@400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-.slogan h2, .slogan h1 {
-  font-family: "inter";
-  letter-spacing: 2px;
+.slogan h1, .slogan h2 {
+  font-family: "Golos";
+  letter-spacing: 4px;
   white-space: nowrap;
 }
 
@@ -13,75 +14,178 @@
   font-weight: bolder;
   letter-spacing: 2px;
   border: none;
-  color: rgb(255, 255, 255);
+  color: white;
   border-radius: 10px;
 }
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
   background-color: #eaeaea;
   font-family: "inter";
+  overflow-x: hidden;
 }
 
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  background-color: rgb(255, 255, 255);
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 15px 30px;
 }
+
 header nav a {
   text-decoration: none;
   white-space: nowrap;
   color: #252a34;
 }
+
 header #nav-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 header #nav-left a {
   padding: 0 20px;
   border-right: 1px solid;
 }
+
 header #nav-left a:hover {
   color: #B3005E;
 }
+
 header #nav-left img {
   width: 90px;
   mix-blend-mode: difference;
 }
+
 header #nav-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 15px;
 }
+
 header #nav-right a:hover {
-  transform: scaleX(1.1);
+  -webkit-transform: scaleX(1.1);
+          transform: scaleX(1.1);
   color: #B3005E;
-  transition: all 0.4s;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.kapsayıcı {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 800px) {
+  .kapsayıcı {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1300px) {
+  .kapsayıcı {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .slogan {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 35px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 95px;
+  margin-top: 95px;
 }
+
 .slogan h1 {
   text-align: center;
 }
+
 .slogan p {
   font-size: 18px;
   max-width: 550px;
 }
+
 .slogan img {
   max-width: 300px;
   mix-blend-mode: darken;
 }
+
+@media (max-width: 800px) {
+  .slogan img {
+    width: 250px;
+  }
+}
+
 .slogan button {
-  background-color: #21bbc4;
-}/*# sourceMappingURL=style.css.map */
+  background-color: #1dadb4;
+}
+
+.image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 45px;
+}
+
+.image #img-main {
+  max-width: 750px;
+  mix-blend-mode: darken;
+}
+
+@media (max-width: 800px) {
+  .image #img-main {
+    width: 600px;
+  }
+}
+
+.image #img-yol {
+  max-width: 600px;
+  mix-blend-mode: darken;
+}
+
+.image p {
+  max-width: 500px;
+}
+/*# sourceMappingURL=style.css.map */
