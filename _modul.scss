@@ -1,0 +1,17 @@
+@import "degisken";
+
+%heading{
+                font-family: $main-font;
+                letter-spacing: 2px;
+                white-space: nowrap;
+                
+}
+
+%button{
+                padding: 10px 20px;
+                font-weight: bolder;
+                letter-spacing: 2px;
+                border: none;
+                color: rgb(255, 255, 255);
+                border-radius: 10px;
+}
