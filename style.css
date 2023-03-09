@@ -3,26 +3,56 @@
 @import url("https://fonts.googleapis.com/css2?family=Electrolize&family=Golos+Text:wght@400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Electrolize&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Electrolize&family=Golos+Text:wght@400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-.slogan h1, .slogan h2 {
+.slogan h2, .slogan h1, #interior h2 {
   font-family: "Golos";
   letter-spacing: 4px;
   white-space: nowrap;
 }
 
-.slogan button {
+.slogan button, #interior button {
   padding: 10px 20px;
   font-weight: bolder;
   letter-spacing: 2px;
   border: none;
-  color: white;
+  color: rgb(255, 255, 255);
   border-radius: 10px;
+}
+
+#interior {
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 63px;
+  align-items: center;
+  justify-content: center;
+}
+#interior h2 {
+  font-size: 30px;
+}
+#interior p {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  max-width: 500px;
+}
+#interior button {
+  border-radius: none;
+  background-color: transparent;
+  border: 1px solid white;
+}
+#interior button:hover {
+  background-color: white;
+  color: black;
+  transition: all 1s;
 }
 
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -32,160 +62,107 @@ body {
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background-color: white;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
   padding: 15px 30px;
 }
-
 header nav a {
   text-decoration: none;
   white-space: nowrap;
   color: #252a34;
 }
-
 header #nav-left {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 header #nav-left a {
   padding: 0 20px;
   border-right: 1px solid;
 }
-
 header #nav-left a:hover {
-  color: #B3005E;
+  color: #1dadb4;
 }
-
 header #nav-left img {
   width: 90px;
   mix-blend-mode: difference;
 }
-
 header #nav-right {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 15px;
 }
-
 header #nav-right a:hover {
-  -webkit-transform: scaleX(1.1);
-          transform: scaleX(1.1);
-  color: #B3005E;
-  -webkit-transition: all .4s;
-  transition: all .4s;
+  transform: scaleX(1.1);
+  color: #1dadb4;
+  transition: all 0.4s;
 }
 
 .kapsayıcı {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  background: linear-gradient(rgb(215, 215, 215) 40%, #eaeaea 40%);
+  justify-content: center;
 }
-
 @media (max-width: 800px) {
   .kapsayıcı {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
-
 @media (min-width: 801px) and (max-width: 1300px) {
   .kapsayıcı {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
 
 .slogan {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   gap: 95px;
   margin-top: 95px;
 }
-
 .slogan h1 {
   text-align: center;
 }
-
 .slogan p {
   font-size: 18px;
   max-width: 550px;
 }
-
 .slogan img {
   max-width: 300px;
   mix-blend-mode: darken;
 }
-
 @media (max-width: 800px) {
   .slogan img {
     width: 250px;
   }
 }
-
 .slogan button {
   background-color: #1dadb4;
 }
-
 .image {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   gap: 45px;
 }
-
 .image #img-main {
   max-width: 750px;
   mix-blend-mode: darken;
 }
-
 @media (max-width: 800px) {
   .image #img-main {
     width: 600px;
   }
 }
-
 .image #img-yol {
   max-width: 600px;
   mix-blend-mode: darken;
 }
-
 .image p {
   max-width: 500px;
 }
-/*# sourceMappingURL=style.css.map */
+
+#interior {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.3), black), url(/audi/Audi-A3-2011-5.jpg);
+}/*# sourceMappingURL=style.css.map */

@@ -45,7 +45,7 @@ header {
      padding: 0 20px;
      border-right: 1px solid;
      &:hover{
-      color: #B3005E;
+      color: #1dadb4;
      }
     }
     img {
@@ -59,7 +59,7 @@ header {
     a{
       &:hover{
         transform: scaleX(1.1);
-        color:#B3005E;
+        color:#1dadb4;
         transition: all .4s;
     }
   
@@ -68,6 +68,7 @@ header {
 }
 .kapsayıcı{
   display: flex;
+  background: linear-gradient(rgb(215,215,215)40%,$bg-color 40%);
   @include mobile{
     flex-direction: column;
   }
@@ -125,4 +126,9 @@ header {
 p{
   max-width: 500px;
 }
+}
+#interior{
+  @extend %design;
+  //linear tanımı resim öncesi yapılmalı radial-gradient
+  background-image:radial-gradient(rgba(0,0,0,0.3),black) ,url(/audi/Audi-A3-2011-5.jpg);
 }
