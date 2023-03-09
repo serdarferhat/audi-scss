@@ -223,4 +223,18 @@ header #nav-right a:hover {
 }
 #cars-sec button {
   background-color: #1dadb4;
+}
+
+footer {
+  display: flex;
+  gap: 35px;
+  background-color: #000000;
+  color: aliceblue;
+  font-weight: 100;
+}
+footer p {
+  margin-top: 35px;
+}
+footer img {
+  width: 200px;
 }/*# sourceMappingURL=style.css.map */

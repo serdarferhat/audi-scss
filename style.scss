@@ -189,3 +189,18 @@ p{
     background-color:#1dadb4;
   }
 }
+//footer
+footer{
+  p{
+    margin-top: 35px;
+  }
+  display: flex;
+  gap: 35px;
+  background-color: #000000;
+  color: aliceblue;
+  font-weight: 100;
+  img{
+    width: 200px;
+    
+  }
+}
